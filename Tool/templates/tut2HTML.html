@@ -1,0 +1,218 @@
+<!--use simple language to write html, such as notepad
+    html defines outlook of webpage-->
+
+<!-- file tag, define the type of this file -->
+<!DOCTYPE html>
+
+<!-- container tag, pair of tags, open and /close -->
+<!-- webbrowser parse/decipher all the tags -->
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+    <head>
+        <!--meta tag, meta description tag
+        define the character set and be the description
+        and metatag can takes different numbers of attributes
+
+        metatag defines metadata about an HTML document,for search engine.
+        Metadata is data (information) about data. <meta> tags always go inside the <head>-->
+        <meta charset="UTF-8">
+        <meta name="description" content="amazing webpage! around 160 words">
+        <meta name="author" content="Sharon shen">
+        <meta name="keywords" content="a webpage, for search engine">
+        <!-- useful for displaying on different devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sharon's Website</title>
+    </head>
+
+    <!--body: this is what shown on the webpage -->
+    <!--control the color of paragraph, css styling-->
+    <body style="background:AliceBlue">
+    <!--header tag: control the size of header-->
+    <!--I can switch the tags, such as header and paragraph tag, to rearrange my website-->
+        <h3>Hello, I am Sharon Shen!</h3>
+        <h6>Hello, I am Sharon Shen!</h6>
+
+    <!--three sections header, main, and footer-->
+        <header>
+            <!--navigation info and links-->
+            <nav>
+                <!--use a href to create a link here, and a link directly on the tab, 直接跳转-->
+                <section> <a href = "https://www.youtube.com/watch?v=pQN-pnXPaVg"><h>youtube</h> </a></section>
+                <!--open in new tab, absolute link-->
+                <section> <a href = "https://www.youtube.com/watch?v=pQN-pnXPaVg", target = _blank><h>youtube new tab</h> </a></section>
+                <!--link in relative path, directly call under same dir, use /dir2/url.html to link other dir, page2-->
+                <section> <a href = "TestLink.html", target = _blank><h>page2</h> </a></section>
+                <section> <a href = "IMG_2743.JPG"><h>myPrettyHead</h> </a></section>
+                <section>hahhah</section>
+            </nav>
+
+        </header>
+
+        <!--break tag, break between two different section-->
+        <br>
+
+        <main>
+
+            <!--artical, and each sections of that artical-->
+            <article>
+                <section>
+                    <h4>Goal </h4>
+                    The main goal of the project for this course is to give you a chance to play around with
+                    some of the AI algorithms discussed in class, in the context of a fun, large-scale problem.
+                </section>
+                <section>
+                    <h4>Another paragraph </h4>
+                    This year we will be working on a game called Colosseum Survival!
+                    General questions should be posted in Ed. This is a group project, with two
+                    students per group. Working alone is OK if you prefer.
+                </section>
+                <!--aside, does not link to the main content of web-->
+                <aside>
+                    I want to put some advertisement here
+                </aside>
+            </article>
+
+            <!--I can switch the tags, such as header and paragraph tag, to rearrange my website-->
+            <!--paragraph tag-->
+            <!--embed bod and italic inside paragraph tags or any other tags, big tag and small tag changes font size-->
+            <p> <big>I</big> <small>have</small> a cute cat whose name is <i><b>Cat</b></i>!</p>
+            <!--horizontal tag, show a horizontal line-->
+            <hr/>
+            <p> I love doing sports in my spare time!</p>
+            <p> My favorite drink is H<sub>2</sub>O, and my favorite number is 3<sup>26</sup></p>
+            <p> watch to 36min https://www.youtube.com/watch?v=pQN-pnXPaVg</p>
+
+            <!--styling in the attribute, control the color of paragraph-->
+            <p style = "color: red; background-color: blue"> I love doing sports in my spare time!</p>
+
+            <!--image tag, link internet's image-->
+            <!--if the image does not show up, use alt, or use alt to describe the image-->
+            <!--nested my image, make the image clickbale-->
+            <a href = "https://www.youtube.com/watch?v=pQN-pnXPaVg", target = _blank><h>
+                <img width = 100 height =200 src="https://images.freeimages.com/images/large-previews/861/no-copyright-1198725.jpg" alt ="my image"/>
+                </h> </a>
+            <img width =300 src="IMG_2743.JPG" alt ="my image"/>
+
+            <!--video tag, add controls/control vide, loop/loop video,autoplay/自动播放-->
+            <!--thumbimage/封面用poster加入-->
+            <video src = "mao.mp4" poster="IMG_2743.JPG" controls width ="300"> </video>
+
+             <!--unordered list-->
+            <ul>
+                <li> Item1 </li>
+                <li> Item2 </li>
+                <li> <a href = "https://www.youtube.com/watch?v=pQN-pnXPaVg" target = _blank><h>listitem: youtube</h></a></li>
+            </ul>
+
+            <!--ordered list, can change type of each list element, a, i,n, A... -->
+            <ol type = "n">
+                <li> Item1 </li>
+                <li> Item2 </li>
+                <li> <a href = "https://www.youtube.com/watch?v=pQN-pnXPaVg" target = _blank><h>listitem: youtube</h></a></li>
+            </ol>
+
+            <!--nested list-->
+            <ol type = "n">
+                <li> Item1 </li>
+                <li>
+                    <ol type = "A">
+                        <li> Item1 </li>
+                        <li> Item2 </li>
+                        <li> <a href = "https://www.youtube.com/watch?v=pQN-pnXPaVg" target = _blank><h>listitem: youtube</h></li>
+                    </ol>
+                </li>
+                <li> <a href = "https://www.youtube.com/watch?v=pQN-pnXPaVg" target = _blank><h>listitem: youtube</h></a></li>
+            </ol>
+
+             <!--Description list-->
+            <dl>
+                <dt> Item1 </dt>
+                <dd>- Description 1</dd>
+                <dt> Item2 </dt>
+                <dd><img width =300 src="IMG_2743.JPG" alt ="my image"/></dd>
+            </dl>
+
+            <!--table-->
+            <table>
+
+                <caption> <h2> MyHeader of table </h2></caption>
+                <!--table row, first row-->
+                <tr>
+                    <!--table data-->
+                    <td > row1-1</td>
+                    <td> row1-2</td>
+                    <td> row1-3</td>
+                </tr>
+
+                <tr>
+                    <!--colspan, span 2 cols for this data-->
+                    <td colspan = 2> one</td>
+                    <td> one</td>
+                    <td> one</td>
+                </tr>
+
+                <!--table header! even though in the end-->
+                <tr>
+                    <th> one</th>
+                    <th> one</th>
+                    <th> one</th>
+                </tr>
+            </table>
+
+            <br>
+        <!--black element: take up entire line of page, such as paragraph, 强制换行-->
+        <!--in line element: a href, can be put side by side-->
+        <!--span, in line container-->
+            <span> span1</span>
+            <span> span2</span>
+
+            <hr>
+        <!--dive, block container,强制换行-->
+            <div> div1</div>
+            <div> div2</div>
+
+        <!--retrieve input from user-->
+            <!--form tag, wrapper of inputs, need another language to retrieve user's data-->
+            <form>
+            <input type = "text" value="enter password"/>
+            <!--password type input, can have default input-->
+            <input type = "password" />
+            <input type = "date" />
+            <input type = "range" />
+            <input type = "file" />
+
+            <!--both checkbox can be checked-->
+            <input type = "checkbox" />
+            <input type = "checkbox" />
+
+            <!--can only check one radiobox, if they have same name-->
+            <input name ="samename" type = "radio" />
+            <input name ="samename" type = "radio" />
+
+            <input type = "submit" />
+            </form>
+
+            <!-- text area, can be resized manually, retrieve input from user-->
+            <textarea>
+            enter paragraph
+            </textarea>
+
+            <hr>
+
+            <!--use iframe to embed other websites-->
+            <iframe
+                    width="600"
+                    height="450"
+                    style="border:0"
+                    loading="lazy"
+                    allowfullscreen
+                    referrerpolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAF6zZm4jFkRl2KFnHlRR_T4Lpwd0xo3oU&q=Space+Needle,Seattle+WA">
+            </iframe>
+
+        </main>
+
+        <footer>
+
+        </footer>
+    </body>
+</html>

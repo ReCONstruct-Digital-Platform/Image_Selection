@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      {% if title %}
+      <title>{{ title }} - Image Tool</title>
+      {% else %}
+      <title>Image Tool</title>
+      {% endif %}
+    </head>
+    <body>
+        <div><a href="/index">Home</a></div>
+        <div><a href="/image">image</a></div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>

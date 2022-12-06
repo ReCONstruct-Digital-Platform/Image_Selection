@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8 />
+  <title></title>
+  <style>
+    div.container {
+      display:inline-block;
+    }
+    p {
+      text-align:center;
+    }
+  </style>
+</head>
+<body>
+    {% for image in images %}
+      <img width =500 src= "{{ url_for('static', filename='images/' + image) }}" alt="{{image}}">
+  {% endfor %}
+
+</body>
+</html>
